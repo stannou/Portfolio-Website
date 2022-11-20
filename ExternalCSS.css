@@ -1,0 +1,90 @@
+body
+{
+    font-family: cursive;
+    
+    background-color: black;
+
+    
+}
+
+/* styling the h1 */
+h1
+{
+    color:aqua;
+}
+
+h2
+{
+    color: aqua;
+}
+
+
+
+.group
+{
+    background-color: black;
+
+    background-image: url("1.png");
+
+    border: 1px solid;
+
+    margin: 11px;
+
+    padding: 25px;
+}
+
+.container
+{
+    background-color:white;
+
+    padding: 19px;
+}
+
+/* aligning the text in the centraiser class to be in the center */
+.centraliser
+{
+    text-align: center;
+}
+
+.topnav {
+    overflow: hidden;
+
+    background-color: black;
+  }
+  
+  .topnav a {
+
+    transition: all .5s ease;
+
+    float: left;
+
+    color: grey;
+
+    text-align: center;
+
+    padding: 14px 16px;
+
+    text-decoration: none;
+
+    font-size: 17px;
+  }
+  
+  /* styling the link while hovering over it. */
+  .topnav a:hover {
+      
+    background-color: white;
+
+    color: black;
+
+    box-shadow: 0 0  10px white;
+
+  }
+  
+  /* while being active this style shows on the link. */
+  .topnav a.active {
+
+    background-color: darkgray;
+
+    color: white;
+
+  }

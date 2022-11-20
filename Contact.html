@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+
+<html>
+
+    <head>
+
+        <meta name="description" content="Coursework" />
+
+        <meta name="keywords" content="Coursework,Information System,Coursework of Information System" />
+
+        <meta name="author" content="Manish Hajur Khadka" />
+
+        <!-- setting the title to Contact. -->
+        <title>Contact me</title>
+        
+
+        <style>
+
+            a
+            {
+
+                transition: all .5s ease;
+
+                float: left;
+
+                color: white;
+
+                text-align: center;
+
+                padding: 14px 16px;
+
+                text-decoration: none;
+
+                font-size: 17px;
+            }
+            
+            a:hover 
+            {
+                
+                background-color: yellowgreen;
+
+                color: black;
+
+                box-shadow: 0 0  10px yellowgreen;
+
+            }
+            
+            a.active 
+            {
+
+                background-color: pink;
+
+                color: white;
+
+            }
+
+             .topnav 
+            {
+                overflow: hidden;
+
+                background-color: black;
+            }
+            
+            .topnav a 
+            {
+
+                transition: all .5s ease;
+
+                float: left;
+
+                color: grey;
+
+                text-align: center;
+
+                padding: 14px 16px;
+
+                text-decoration: none;
+
+                font-size: 17px;
+            }
+            
+            .topnav a:hover 
+            {
+                
+                background-color: white;
+
+                color: black;
+
+                box-shadow: 0 0  10px white;
+
+            }
+            
+            .topnav a.active 
+            {
+
+                background-color: darkgrey;
+
+                color: white;
+
+            }
+
+            *
+            {
+                margin: 0px;
+
+                padding: 0px;
+            }
+
+            body
+            {
+                background-color: #efefef;
+
+                font-family: sans-serif;
+            }
+
+            .contact-box
+            {
+
+                width: 500px;
+
+                background-color: #fff;
+
+                box-shadow: 0 0 20px 0 #999;
+
+                top: 25%;
+
+                left: 50%;
+
+                transform: translate(-50%);
+
+                position: absolute;
+
+
+            }
+
+            form
+            {
+                margin: 35px;
+
+            }
+
+            .input-field
+            {
+                width: 400px;
+
+                height: 40px;
+
+                margin-top: 20px;
+
+                padding-left: 10px;
+
+                padding-right: 10px;
+
+                border: 1px solid #777;
+
+                border-radius: 14px;
+
+                outline: none;
+            }
+
+            .textarea-field
+            {
+                height: 150px;
+
+                padding-top: 10px;
+            }
+
+            .btn
+            {
+                border-radius: 25px;
+
+                color: #fff;
+
+                margin-top: 18px;
+
+                padding-top: 10px;
+
+                background: #47c35a;
+
+                font-size: 12px;
+
+                border: none;
+
+                cursor: pointer;
+            }
+
+            
+            
+
+        </style>
+
+        <!-- importing main js file. -->
+        <script  type="text/javascript" src="main.js"></script>
+        
+
+    </head>
+
+
+        <body>
+           
+            
+            
+            
+           
+
+            <div class="topnav">
+
+                <a class="active" href="Home.html">Home</a>
+    
+                <a href="CV.html">My CV</a>
+    
+                <a href="Research.html">Research</a>
+    
+                <a href="Blog.html">Blog</a>
+    
+                <a href="Contact.html">Contact</a>
+                
+                
+              </div>
+              
+             
+              <a href="www.stannousstacker@gmail.com">Gmail</a>
+
+              <a href="https://www.facebook.com/stannous.stacker/">Facebook</a>
+
+              <a href="https://www.instagram.com/manish_khadka04/">Instagram</a>
+
+
+
+
+            <div class="contact-box">
+
+                <form>
+
+                    <input type="text" class="input-field" placeholder="Your Name">
+
+                    <input type="text" class="input-field" placeholder="Your email">
+
+                    <input type="text" class="input-field" placeholder="Subject">
+
+                    <input type="text" class="input-field textarea-field" placeholder="Your Message">
+
+                    <input type="button" class="btn" value="Send Message" onclick="msg()"></button>
+
+                </form> 
+
+              </div>
+        </body>
+
+

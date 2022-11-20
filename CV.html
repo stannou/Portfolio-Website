@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta name="description" content="Coursework" />
+
+        <meta name="keywords" content="Coursework,Information System,Coursework of Information System" />
+
+        <meta name="author" content="Manish Hajur Khadka" />
+
+        <title>My CV</title>
+
+        <style>
+            
+            /* styling the link */
+            a 
+            {
+
+                transition: all .5s ease;
+
+                float: left;
+
+                color: white;
+
+                text-align: center;
+
+                padding: 14px 16px;
+
+                text-decoration: none;
+
+                font-size: 17px;
+            }
+            
+            a:hover 
+            {
+                
+                background-color: white;
+
+                color: black;
+
+                box-shadow: 0 0  10px white;
+
+            }
+            
+            a.active 
+            {
+
+                background-color: pink;
+
+                color: white;
+
+            }
+
+            .topnav 
+            {
+                overflow: hidden;
+
+                background-color: black;
+            }
+            
+            .topnav a 
+            {
+
+                transition: all .5s ease;
+
+                float: left;
+
+                color: grey;
+
+                text-align: center;
+
+                padding: 14px 16px;
+
+                text-decoration: none;
+
+                font-size: 17px;
+            }
+            
+            .topnav a:hover 
+            {
+                
+                background-color: white;
+
+                color: black;
+
+                box-shadow: 0 0  10px white;
+
+            }
+            
+            .topnav a.active 
+            {
+
+                background-color: darkgrey;
+
+                color: white;
+
+            }
+
+            *{
+
+                margin: 0;
+
+                padding: 0;
+
+                box-sizing: border-box;
+
+                list-style: none;
+
+                font-family: cursive;
+
+            }
+
+            body
+            {
+                
+                background: #2f4f4f;
+
+                font-size: 14px;
+
+                line-height: 22px;
+
+                color: #555555;
+
+            }
+
+            .bold
+            {
+                font-weight: 700;
+
+                font-size: 20px;
+
+                text-transform: uppercase;
+
+            }
+
+            .semi-bold
+            {
+                font-weight: 500;
+
+                font-size: 16px;
+            }
+
+            .resume
+            {
+                width: 800px;
+
+                height: auto;
+
+                display: flex;
+
+                margin: 50px auto;
+
+            }
+
+            .resume .resume_left
+            {
+                width: 280px;
+
+                background: #0bb5f4;
+
+            }
+
+            .resume .resume_left .resume_profile
+            {
+                width: 100%;
+
+                height: 280px;
+
+            }
+
+            .resume .resume_left .resume_profile img{
+                width: 100%;
+
+                height: 100%;
+            }
+
+            .resume .resume_left .resume_content
+            {
+                padding: 0 25px;
+            }
+
+            .resume .title
+            {
+                margin-bottom: 20px;
+                
+            }
+
+            .resume .resume_left .bold
+            {
+                color: #fff;
+            }
+
+            .resume .resume_left .regular
+            {
+                color: #b1eaff;
+            }
+
+            .resume .resume_item
+            {
+                padding: 25px 0;
+
+                border-bottom: 2px solid #b1eaff;
+            }
+
+            .resume .resume_left .resume_item:last-child
+            {
+                border-bottom: 0px;
+            }
+
+            .resume .resume_left ul li
+            {
+                display: flex;
+
+                align-items: center;
+
+                margin-bottom: 10px;
+            }
+
+            .resume .resume_left ul li:last-child
+            {
+                margin-bottom: 0;
+            }
+
+            .resume .resume_left ul li .data
+            {
+                color:#b1eaff;
+
+            }
+
+            .resume .resume_left .resume_skills ul li
+            {
+                color: #b1eaff;
+
+                justify-content: space-between;
+            }
+
+            .resume .resume_left .resume_skills ul li.skill_name
+            {
+                width: 25%;
+            }
+
+            
+            .resume .resume_left .resume_skills ul li.skill_progress
+            {
+                width: 60%;
+
+                margin: 0 5px;
+
+                height: 5px;
+
+                background: #009fd9;
+
+                position: relative;
+            }
+
+            
+            .resume .resume_left .resume_skills ul li.skill_per
+            {
+
+                width: 15%;
+
+            }
+
+            
+            .resume .resume_left .resume_skills ul li.skill_progress span
+            {
+                position: absolute;
+
+                top: 0;
+
+                left: 0;
+
+                height: 100%;
+
+                background: #fff;
+
+
+            }
+
+            .resume .resume_right
+            {
+                width: 520px;
+
+                background: #fff;
+
+                padding: 25px;
+
+            }
+
+            .resume .resume_right .bold
+            {
+                color: #009fd9;
+
+            }
+
+            .resume .resume_right .resume_education ul
+            {
+                padding-left: 40px;
+
+                overflow: hidden;
+            }
+
+            .resume .resume_right ul li
+            {
+                position: relative;
+            }
+            
+            .resume .resume_right ul li .date
+            {
+                font-size: 16px;
+
+                font-weight: 500;
+
+                margin-bottom: 15px;
+            }
+
+            .resume .resume_right ul li .info
+            {
+                margin-bottom: 20px;
+
+            }
+
+            .resume .resume_right ul li:last-child .info
+            {
+                margin-bottom: 0;
+            }
+
+            .resume .resume_right .resume_education ul li:before
+            {
+                content: "";
+
+                position: absolute;
+
+                top: 5px;
+
+                left: -25px;
+
+                width: 6px;
+
+                height: 6px;
+
+                border-radius: 50%;
+
+                border: 2px solid #009fd9
+            }
+
+            .resume .resume_right .resume_education ul li:after
+            {
+                content: "";
+
+                position: absolute;
+
+                top: 14px;
+
+                left: -21px;
+
+                width: 3px;
+
+                height: 115px;
+
+                background: #0bb5f4
+
+            }
+
+            .resume .resume_right .resume_hobby ul li
+            {
+                width: 80px;
+
+                height: 80px;
+
+                border: 2px solid #0bb5f4;
+
+                border-radius: 50%;
+
+                position: relative;
+
+                color: #0bb5f4;
+            }
+
+            
+        </style>
+
+
+            
+    
+        </style>
+
+        
+    </head>
+
+    <body>
+        
+        <div class="topnav">
+
+            <a class="active" href="Home.html">Home</a>
+
+            <a href="CV.html">My CV</a>
+
+            <a href="Research.html">Research</a>
+
+            <a href="Blog.html">Blog</a>
+
+            <a href="Contact.html">Contact</a>
+
+          </div>
+
+          <div class="resume">
+              
+            <div class="resume_left">
+
+                <div class="resume_profile">
+                    <img src="2.jpg" alt="profile_pic">
+                </div>
+
+
+                <div class="resume_content">
+                    
+                    <div class="resume_item resume_info">
+                        <div class="title">
+                            <p class="bold">Manish Hajur Khadka</p>
+                            <p class="regular">Student</p>
+                        </div>
+                        <ul>
+                            <li>
+                                
+                                <div class="data">
+                                    Baneswor, Kathmandu <br/> Nepal
+                                </div>
+                            </li>
+
+                            <li>
+                               
+                                <div class="data">
+                                   +977 9814926554
+                                </div>
+                            </li>
+
+                            <li>
+                               
+                                <div class="data">
+                                  <a href="www.stannousstacker@gmail.com">Gmail</a>
+                                </div>
+                            </li>
+
+                            <li>
+                               
+                                <div class="data">
+                                   <a href="https://www.facebook.com/stannous.stacker/">Facebook</a>
+                                </div>
+                            </li>
+
+                            <li>
+                               
+                                <div class="data">
+                                    <a href="https://www.instagram.com/manish_khadka04/">Instagram</a>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+    
+                    <div class="resume_item resume_skills">
+
+                        <div class="title">
+                            
+                            <p class="bold">skill's
+
+                            </p>
+                            
+                        </div>
+
+                        <ul>
+                            <li>
+                                <div class="skill_name">
+                                    HTML
+                                </div>
+
+                                <div class="skill_progress">
+                                    <span style="width: 80%;"></span>
+                                </div>
+
+                                <div class="skill_per">80%</div>
+                            </li>
+
+                            <li>
+                                <div class="skill_name">
+                                    CSS
+                                </div>
+
+                                <div class="skill_progress">
+                                    <span style="width: 70%;"></span>
+                                </div>
+
+                                <div class="skill_per">70%</div>
+                            </li>
+
+                            <li>
+                                <div class="skill_name">
+                                    JS
+                                </div>
+
+                                <div class="skill_progress">
+                                    <span style="width: 40%;"></span>
+                                </div>
+
+                                <div class="skill_per">40%</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                   
+                </div>
+
+            </div>
+
+            <div class="resume_right">
+
+                <div class="resume_item resume_about">
+
+                    <div class="title">
+                        
+                        <p class="bold">About me</p>
+
+                    </div>
+
+                    <p>
+                        I'm a BSc.Hons Computing Student currently studying in Islington College. As i grew older, my interests in technologies started growing which eventually led me to this path.
+                    </p>
+                </div>
+                <div class="resume_item resume_education">
+
+                    <div class="title">
+
+                        <p class="bold">Education</p>
+                    </div>
+                    <ul>
+                        
+                        <li>
+
+                            <div class="date"> 2018 - 2020</div>
+
+                            <div class="info">
+
+                                <p class="semi-bold"> Siddhartha Higher Secondary School</p>
+
+                                <p> I studied Science with Math in +2 level in which i did an excellent job and i graduated from there in 2020.    </p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+
+                            <li>
+
+                                <div class="date"> 2021 - Present</div>
+    
+                                <div class="info">
+    
+                                    <p class="semi-bold"> Islington College</p>
+    
+                                    <p> I am currently pursuing my dream in Islington College where i'm studying BSc.Hons Computing.  </p>
+                                </div>
+                            </li>
+                        </li>
+                    </ul>
+                </div>
+                <div class="resume_item resume_hobby">
+
+                    <div class="title">
+                        
+                        <p class="bold">Hobby</p>
+
+                    </div>
+
+                    <p class="semi_bold">
+                        I have multiple interests which includes gaming, sports and playing guitar as well. I always do these stuffs on my free time to make myself engaged.
+                    </p>
+
+                    
+                </div>
+                
+
+            </div>
+
+    </body>
+    
+</html>
+        
